@@ -29,7 +29,7 @@ abc = new Triangle();
 
 	@Test
 	public void test() {
-		assertEquals("getArea()", abc.getArea(), 0, .1);
+		assertEquals("getArea()", abc.getArea(), 1, .1);
 		assertEquals("getArea()", abc.getPerimeter(), 3.0, .1);
 		
 	}

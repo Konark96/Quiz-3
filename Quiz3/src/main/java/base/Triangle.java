@@ -24,7 +24,7 @@ Make sure to submit a .zip file (not jar, not .war, not .rar)
 
 /*
  * @Author Konark Christian
- * @Version 1.0
+ * @Version 1.1
  */
 public class Triangle extends GeometricObject{
 	private double side1, side2, side3, defaultSide = 1.0; //3 Sides of the triangle and the default size of the sides
@@ -58,7 +58,8 @@ public class Triangle extends GeometricObject{
 	}
 	
 	public double getArea(){
-		return 0;
+		double avgSide = (side1 + side2 + side3)/3;
+		return avgSide*avgSide;
 	}
 	public double getPerimeter(){
 		return side1+side2+side3;
